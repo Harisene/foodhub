@@ -121,7 +121,10 @@ getButton = () =>{
         
         <TouchableOpacity
                     style={styles.shop}
-                    onPress={() =>{this.props.navigation.navigate("items",{shop_id:item.shop_id}),this.props.navigation.navigate("items",{shop_name:item.shop_name})}}>               
+                    onPress={() =>{this.props.navigation.navigate("items",{shop_id:item.shop_id}),
+                    this.props.navigation.navigate("items",{shop_name:item.shop_name}),
+                    this.props.navigation.navigate("items",{shop_address:item.address}),
+                    this.props.navigation.navigate("items",{telephone:item.contact_no})}}>               
                    
         <Text style={{fontSize:20,fontWeight:'bold',marginLeft:'2%'}}>
           {item.shop_name}
@@ -263,8 +266,6 @@ data:{
 marginTop:'2%',
 marginLeft:'2%',
 width:'80%',
-
-
 
 },
 
